@@ -1,0 +1,9 @@
+<% @users.each do |user| %>
+
+    <div>
+        Name: <%= user.name %> <br>
+        Email: <%=  user.email %>
+        	<%= button_to "Delete", user, method: :delete %>
+    </div>
+
+<% end %>
